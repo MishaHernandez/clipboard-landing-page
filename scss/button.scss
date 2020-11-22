@@ -1,0 +1,22 @@
+.button {
+    width: 100%;
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    margin-bottom: 1.75rem;
+    &:nth-of-type(1) {
+        margin-top: 33px;
+    }
+    
+    &--ios {
+        background-color: $strong-cyan;
+        box-shadow: 0 2px 0 2px darken($strong-cyan, 5%);
+    }
+    &--mac {
+        background-color: $light-blue;
+        box-shadow: 0 2px 0 2px darken($light-blue, 5%);
+    }
+}
