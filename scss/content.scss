@@ -1,10 +1,44 @@
 .section-1 {
     margin-bottom: 3.5rem;
+
+    &__subtitle {
+        @include desktop {
+            font-size: 2.2rem;
+        }
+    }
+
+    &__paragraph {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            font-size: 1.1rem;
+        }
+    }
 }
 .section-2 {
     margin-bottom: 11.7rem;
+
+    @include desktop {
+        display: flex;
+        margin-bottom: 6.7rem;
+    }
     .img-1 {
         margin-bottom: 3.5rem;
+
+        @include desktop {
+            position: relative;
+            left: -200px;
+        }
+    }
+    @include desktop {
+        &__services {
+            text-align: left;
+            width: 350px;
+            position: relative;
+            left: -100px;
+        }
     }
     &__title {
         font-size: 1.5rem;
@@ -21,15 +55,45 @@
     &__access {
         margin-bottom: 3.5rem;
     }
+    &__subtitle {
+        @include desktop {
+            font-size: 2.2rem;
+        }
+    }
+    &__paragraph {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        @include desktop {
+            font-size: 1.1rem;
+        }
+    }
+    .img-2 {
+        margin-left: auto;
+        margin-right: auto;
+        @include desktop {
+            width: 900px;
+        }
+    }
 }
 .section-4 {
     margin-bottom: 8rem;
     &__subtitle {
         margin-bottom: 1rem;
+        @include desktop {
+            font-size: 2.2rem;
+        }
     }
     &__paragraph {
         margin-top: 0;
         margin-bottom: 5.5rem;
+        @include desktop {
+            font-size: 1.1rem;
+        }
+    }
+    &__tools {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
     }
     .tool {
         &__img {
@@ -51,6 +115,11 @@
 .section-5{
     margin-bottom: 10rem;
 
+    @include desktop {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+
     &__partner {
         margin-left: auto;
         margin-right: auto;
@@ -58,26 +127,56 @@
 
         &:nth-child(1) {
             width: 139px;
+            @include desktop {
+                width: 150px;
+            }
         }
 
         &:nth-child(2) {
             width: 115px;
+            @include desktop {
+                width: 130px;
+            }
         }
 
         &:nth-child(3) {
             width: 135px;
+            @include desktop {
+                width: 150px;
+            }
         }
 
         &:nth-child(4) {
             width: 113px;
+            @include desktop {
+                width: 130px;
+            }
         }
 
         &:nth-child(5) {
             width: 105px;
+            @include desktop {
+                width: 120px;
+            }
         }
     }
 }
 
 .section-6 {
     margin-bottom: 9rem;
+
+    &__subtitle {
+        @include desktop {
+            font-size: 2.2rem;
+        }
+    }
+    &__paragraph {
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include desktop {
+            font-size: 1.1rem;
+        }
+    }
 }

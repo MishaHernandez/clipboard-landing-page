@@ -7,8 +7,17 @@
     padding: 1rem 2rem;
     border-radius: 2rem;
     margin-bottom: 1.75rem;
+
+    @include desktop {
+        width: auto;
+    }
+
     &:nth-of-type(1) {
         margin-top: 33px;
+
+        @include desktop {
+            margin-right: 1rem;
+        }
     }
     
     &--ios {
