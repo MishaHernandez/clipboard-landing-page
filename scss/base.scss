@@ -5,7 +5,7 @@ body {
     font-size: 18px;
     font-family: 'Bai Jamjuree', sans-serif;
     // margin between body and header logo
-    margin-top: 125px;
+    margin-top: 123px;
     background: url(../images/bg-header-mobile.png) no-repeat;
 
     @include desktop {
@@ -22,7 +22,10 @@ h1,h2,h3 {
     line-height: 1.25;
 }
 header {
-    margin-bottom: 8.7rem;
+    margin-bottom: 8.6rem;
+    @include desktop {
+        margin-bottom: 7.94rem;
+    }
 }
 p {
     color: $grayish-blue;
@@ -39,6 +42,27 @@ footer {
 }
 .container {
     text-align: center;
+}
+.logo {
+
+    &-header,
+    &-footer {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    &-header {
+        width: 125px;
+        margin-bottom: 60px;
+
+        @include desktop {
+            margin-bottom: 52px;
+        }
+    }
+
+    &-footer {
+        width: 55px;
+    }
 }
 .header__title {
     font-size: 2rem;
@@ -57,19 +81,5 @@ footer {
 
     @include desktop {
         font-size: 1.25rem;
-    }
-}
-.logo {
-    &-header, &-footer {
-        margin-left: auto;
-        margin-right: auto;
-    }
-    &-header {
-        width: 125px;
-        // margin-top: 120px;
-        margin-bottom: 52px;
-    }
-    &-footer {
-        width: 55px;
     }
 }

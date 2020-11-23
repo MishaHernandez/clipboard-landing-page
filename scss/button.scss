@@ -13,9 +13,10 @@
     }
 
     &:nth-of-type(1) {
-        margin-top: 33px;
+        margin-top: 32px;
 
         @include desktop {
+            margin-top: 27px;
             margin-right: 1rem;
         }
     }

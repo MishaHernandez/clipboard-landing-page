@@ -4,11 +4,12 @@
         grid-template-columns: 100px 700px 150px;
         text-align: left;
         justify-content: space-between;
+        padding-top: 1.87rem;
     }
 }
 .logo-footer {
-    padding-top: 3.3rem;
-    padding-bottom: 1.7rem;
+    padding-top: 3.25rem;
+    padding-bottom: 1.625rem;
     @include desktop {
         padding: 0;
         display: flex;
@@ -17,7 +18,7 @@
 }
 .info {
     display: grid;
-    margin-bottom: 2.5rem;
+    margin-bottom: 2.38rem;
 
     @include desktop {
         grid-template-columns: repeat(3, 190px);
