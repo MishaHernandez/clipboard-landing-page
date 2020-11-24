@@ -24,9 +24,19 @@
     &--ios {
         background-color: $strong-cyan;
         box-shadow: 0 2px 0 2px darken($strong-cyan, 5%);
+        @include desktop {
+            &:hover {
+                opacity: .6;
+            }
+        }
     }
     &--mac {
         background-color: $light-blue;
         box-shadow: 0 2px 0 2px darken($light-blue, 5%);
+        @include desktop {
+            &:hover {
+                opacity: .6;
+            }
+        }
     }
 }

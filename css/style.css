@@ -478,9 +478,19 @@ footer {
   background-color: #26baa4;
   box-shadow: 0 2px 0 2px #22a591;
 }
+@media screen and (min-width: 1200px) {
+  .button--ios:hover {
+    opacity: 0.6;
+  }
+}
 .button--mac {
   background-color: #6173ff;
   box-shadow: 0 2px 0 2px #475dff;
+}
+@media screen and (min-width: 1200px) {
+  .button--mac:hover {
+    opacity: 0.6;
+  }
 }
 
 .section-1 {
@@ -765,6 +775,11 @@ footer {
   margin-top: 0.9rem;
   margin-bottom: 0.9rem;
 }
+@media screen and (min-width: 1200px) {
+  .info__link:hover {
+    color: #26baa4;
+  }
+}
 
 .social {
   display: flex;
@@ -786,6 +801,9 @@ footer {
 @media screen and (min-width: 1200px) {
   .social__img {
     margin-right: 0;
+  }
+  .social__img a:hover {
+    fill: #26baa4;
   }
 }
 
