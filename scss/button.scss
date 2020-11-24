@@ -8,14 +8,14 @@
     border-radius: 2rem;
     margin-bottom: 1.75rem;
 
-    @include desktop {
+    @include tablet {
         width: auto;
     }
 
     &:nth-of-type(1) {
         margin-top: 32px;
 
-        @include desktop {
+        @include tablet {
             margin-top: 27px;
             margin-right: 1rem;
         }

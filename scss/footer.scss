@@ -20,8 +20,14 @@
     display: grid;
     margin-bottom: 2.38rem;
 
+    @include tablet {
+        grid-template-columns: repeat(3, 190px);
+        justify-items: center;
+    }
+
     @include desktop {
         grid-template-columns: repeat(3, 190px);
+        justify-items: start;
         margin-bottom: 0;
     }
     &__link {

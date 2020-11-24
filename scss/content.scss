@@ -111,11 +111,25 @@
     }
     &__tools {
         display: grid;
+        @include tablet {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+        }
         @include desktop {
             grid-template-columns: repeat(3, 1fr);
         }
     }
     .tool {
+        @include tablet {
+            &:last-child {
+                grid-column: 1/-1;
+            }
+        }
+        @include desktop{
+            &:last-child {
+                grid-column: initial;
+            }
+        }
         &__img {
             width: 44px;
             margin-left: auto;
@@ -138,9 +152,13 @@
 
 .section-5{
     margin-bottom: 10.44rem;
+    display: grid;
+
+    @include tablet {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     @include desktop {
-        display: grid;
         grid-template-columns: repeat(5, 1fr);
         margin-bottom: 5.25rem;
     }
@@ -180,8 +198,12 @@
 
         &:nth-child(5) {
             width: 105px;
+            @include tablet {
+                grid-column: 1/-1;
+            }
             @include desktop {
                 width: 120px;
+                grid-column: initial;
             }
         }
     }
